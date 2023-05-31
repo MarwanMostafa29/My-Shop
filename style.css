@@ -1,0 +1,422 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    height: 270px;
+}
+/* Top-nav */
+.Top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    align-items: center;
+}
+.Top-nav div i {
+    color: #9d9494e0;
+    padding: 0 5px;
+    font-size: 18px;
+}
+.Top-nav .search-input {
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding-left: 12px;
+    font-size: 18px;
+}
+.Top-nav .search-input:focus {
+    outline: none;
+    animation-name: search;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+}
+@keyframes search{
+    from{
+        padding-left: 12px;
+    }
+    to {
+        padding-left: 0;
+    }
+}
+.Top-nav div a{
+    font-size: 27px;
+    outline: black 3px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 24px;
+    color: #000000b3;
+    margin-right: 110px;
+}
+.Top-nav .icons i:hover {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Top-nav .icons{
+    position: relative;
+}
+.Top-nav .icons span{
+    font-size: 10px;
+    padding: 6px 9px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    left: 84px;
+    top: -20px;
+}
+/* bottom-nav */
+.bottom-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-nav ul li {
+    padding: 28px 18px;
+}
+.bottom-nav ul li a{
+    text-decoration: none;
+    color: #000000b3;
+}
+.bottom-nav ul li a:hover{
+    color: blueviolet;
+}
+/* sec-1 */
+.sec-1 {
+    background-image: url(image/hero_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.sec-1 .text {
+    margin-right: 150px;
+}
+.sec-1 .text .big-text {
+    font-size: 60px;
+    font-weight: bold;
+}
+.sec-1 .text .small-text{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 0 0 0;
+}
+.sec-1 .text .btn{
+    padding: 13px 33px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 20px;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec-1 .text .btn:hover {
+    box-shadow:  4px 4px 15px 2px black;
+    transform: scale(1.0125,1.0125);
+}
+/* Sec-2 */
+.sec-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    width: 90%;
+    margin: auto;
+}
+.sec-2 .parent {
+    display: flex;
+}
+.sec-2 .parent p {
+    padding-top: 10px;
+    color: #9d9494e0;
+    font-size: 18px;
+    line-height: 27px;
+}
+.sec-2 .parent i {
+    color: rgb(123, 40, 201);
+    font-size: 45px;
+    padding: 0 30px;
+}
+/* sec-3 */
+.sec-3 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+    padding-bottom: 100px ;
+}
+.sec-3 div {
+    position: relative;
+    transform: scale(1,1);
+    transition: 0.5s;
+    padding-bottom: 230PX;
+}
+.sec-3 .Women {
+    background-image: url(image/women.jpg);
+    background-size: cover;
+    width: 380px;
+    height: 510px;
+}
+.sec-3 .Childern {
+    background-image: url(image/children.jpg);
+    background-size: cover;
+    width: 380px;
+    height: 510px;
+}
+.sec-3 .Men {
+    background-image: url(image/men.jpg);
+    background-size: cover;
+    width: 380px;
+    height: 510px;
+}
+.sec-3 div:hover {
+    transform: scale(1.1,1.1);
+}
+.sec-3 p{
+    color: white;
+    top: 410px;
+    position: absolute;
+    left: 20px;
+    font-size: 13px;
+    z-index: 1;
+    font-weight: 600;
+}
+.sec-3 h2{
+    color: white;
+    position: absolute;
+    left: 21px;
+    top: 435px;
+    font-size: 46px;
+    z-index: 1;
+}
+.sec-3 div::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+}
+/* sec-4 */
+.sec-4 {
+    width: 100%;
+    background-color: #eeeeeeaf;
+    padding: 130px 0;
+} 
+.sec-4 h1 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    word-spacing: 5px;
+    padding: 0 0 100px 0;
+}
+.sec-4 h1::before{
+    content: "";
+    width: 55px;
+    height: 4px;
+    background-color: blueviolet;
+    position: absolute;
+    top: -40px;
+    left: 700px;
+}
+.sec-4 .card {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+}
+.sec-4 .card li {
+    margin: 0 8px;
+    text-align: center;
+    background-color: white;
+    height: 530px;
+}
+.sec-4 .card li img {
+    width: 430px;
+}
+.sec-4 .text {
+    padding: 35px;
+}
+.sec-4 .text p{
+    color: #857e7ef1;
+}
+.sec-4 .text h3 ,.sec-4 .text span {
+    color: blueviolet;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 45px;
+}
+/* section-five */
+.sec-5 {
+    width: 100%;
+    background-color: white;
+    padding: 130px 0 230px 0;
+} 
+.sec-5 h1 {
+    text-align: center;
+    position: relative;
+    font-size: 33px;
+    word-spacing: 5px;
+    padding: 0 0 100px 50px;
+}
+.sec-5 h1::before{
+    content: "";
+    width: 55px;
+    height: 4px;
+    background-color: blueviolet;
+    position: absolute;
+    top: -40px;
+    left: 728px;
+}
+.sec-5 .sale {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-5 .sale img {
+    width: 700px;
+}
+.sec-5 .sale .img {
+    margin: 0 30px;
+}
+.sec-5 .sale .text-sale {
+    text-align: center;
+    color: #666161;
+    line-height: 32px;
+}
+.sec-5 .text-sale .btn{
+    padding: 13px 33px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 20px;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec-5 .text-sale .btn:hover {
+    box-shadow:  4px 4px 15px 2px black;
+    transform: scale(1.0125,1.0125);
+}
+.sec-5 .sale .text-sale h2 {
+    color: blueviolet;
+    font-size: 37px;
+    font-weight: unset;
+    padding: 0 0 18px 0;
+}
+.sec-5 .sale .text-sale .main {
+    color: #a9a3a3af;
+    font-size: 19px;
+    padding: 0 0 30px 0;
+}
+.sec-5 .sale .text-sale .main span {
+    color: blueviolet;
+}
+.sec-5 .sale .text-sale p{
+    color: #857e7ef1;
+}
+/* footer */
+Footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 120px 0;
+}
+.child-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.dis-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.dis-1 div {
+    margin: 0 30px;
+}
+.parent-fot h2 {
+    padding: 0 0 14px 33px;
+}
+.dis-1 ul {
+    list-style: none;
+}
+.dis-1 ul li a {
+    color: #666161;
+    text-decoration: none;
+}
+.dis-1 ul li {
+    padding: 12px 3px;
+}
+.dis-2 img {
+    width: 320px;
+    padding: 14px 0;
+}
+.dis-2 h3 {
+    color: blueviolet;
+    padding: 0 0 10px 0;
+}
+.dis-2 p {
+    color: #666161;
+}
+.dis-3 .icon-footer {
+    display: flex;
+    padding: 17px 0;
+}
+.dis-3 .icon-footer i {
+    padding: 0 5px;
+    color: blueviolet;
+    font-size: 19px;
+}
+.dis-3 #email {
+    border-radius: 7px;
+    width: 195px;
+    border: #666161 solid 1px;
+    height: 50px;
+    padding: 15px;
+    font-size: 15px;
+    position: relative;
+}
+.dis-3 .sub {
+    color: #666161;
+    padding: 15px 0 15px 0;
+}
+.dis-3 .btn {
+    padding: 14px;
+    border-radius: 5px;
+    width: 81px;
+    background: blueviolet;
+    color: white;
+    border: none;
+    position: absolute;
+    left: 1166px;
+    top: 4517px;
+    cursor: pointer;
+}
+.Copyright{
+    text-align: center;
+    padding: 30px 0 35px 0;
+    color: #666161;
+}
+.Copyright span {
+    color: blueviolet;
+}
